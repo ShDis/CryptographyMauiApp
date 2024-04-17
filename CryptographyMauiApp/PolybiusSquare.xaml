@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptographyMauiApp.PolybiusSquare"
+             Title="Polybius Square">
+    <Grid Margin="4" VerticalOptions="Fill" HorizontalOptions="Fill">
+        <ScrollView VerticalOptions="Fill" HorizontalOptions="Fill">
+            <VerticalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Style="{StaticResource Style_InsideLabel}" Text="Количество колонок:" VerticalOptions="Center"></Label>
+                    <Entry Style="{StaticResource Style_InsideNumericEntry}" x:Name="Entry_Columns" Text="5" Completed="Entry_Columns_Completed" VerticalOptions="Center"></Entry>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Style="{StaticResource Style_InsideLabel}" Text="Ключевая фраза:" VerticalOptions="Center"></Label>
+                    <Entry Style="{StaticResource Style_InsideTextEntry}" x:Name="Entry_KeyPhrase" Text="polybius" Completed="Entry_KeyPhrase_Completed" VerticalOptions="Center"></Entry>
+                </HorizontalStackLayout>
+                <Label Style="{StaticResource Style_InsideLabel}" Text="Фраза для шифрофки/дешифровки:"></Label>
+                <Entry Style="{StaticResource Style_InsideTextEntry}" x:Name="Entry_Phrase" Text="сейчасчетыречасаночи" Completed="Entry_Phrase_Completed"></Entry>
+                
+                <Label Style="{StaticResource Style_InsideLabel}" Text="{Binding Table}" x:Name="Label_Table"></Label>
+                
+                <Label Style="{StaticResource Style_InsideLabel}" Text="Результат шифрования:"></Label>
+                <Entry Style="{StaticResource Style_InsideTextEntry}" Text="{Binding Coded}" x:Name="Entry_Coded"></Entry>
+                
+                <Label Style="{StaticResource Style_InsideLabel}" Text="Результат дешифровки:"></Label>
+                <Entry Style="{StaticResource Style_InsideTextEntry}" Text="{Binding Decoded}" x:Name="Entry_Decoded"></Entry>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

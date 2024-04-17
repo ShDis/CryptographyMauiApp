@@ -23,6 +23,39 @@
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
+    <Style x:Key="Style_BasicNumberButton" TargetType="Button">
+        <Setter Property="TextColor" Value="#EEEEEE" />
+        <Setter Property="BackgroundColor" Value="#B784B7" />
+        <Setter Property="Margin" Value="1"/>
+    </Style>
+    <Style x:Key="Style_InsideNumberButton" TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="#8E7AB5" />
+        <Setter Property="Margin" Value="0"/>
+    </Style>
+    <Style x:Key="Style_InsideNumberButton2" TargetType="Button">
+        <Setter Property="TextColor" Value="#FFFFFF" />
+        <Setter Property="BackgroundColor" Value="#EEA5A6" />
+        <Setter Property="Margin" Value="4"/>
+    </Style>
+    <Style x:Key="Style_InsideLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="#000000" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Margin" Value="4"/>
+    </Style>
+    <Style x:Key="Style_InsideTextEntry" TargetType="Entry">
+        <Setter Property="TextColor" Value="#000000" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Margin" Value="4"/>
+        <Setter Property="Keyboard" Value="Text"></Setter>
+    </Style>
+    <Style x:Key="Style_InsideNumericEntry" TargetType="Entry">
+        <Setter Property="TextColor" Value="#000000" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Margin" Value="4"/>
+        <Setter Property="Keyboard" Value="Numeric"></Setter>
+    </Style>
+
     <Style TargetType="Button">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource PrimaryDarkText}}" />
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />

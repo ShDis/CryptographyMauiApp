@@ -8,7 +8,7 @@
     Title="CryptographyMauiApp">
 
     <ShellContent
-        Title="Home"
+        Title="Лабы по криптографии (апрель 2024)"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

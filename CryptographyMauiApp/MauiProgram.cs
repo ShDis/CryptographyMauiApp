@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace CryptographyMauiApp
 {
@@ -15,8 +16,11 @@ namespace CryptographyMauiApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            // Initialise the .NET MAUI Community Toolkit
+            builder.UseMauiApp<App>().UseMauiCommunityToolkit();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
